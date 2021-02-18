@@ -4,13 +4,13 @@ using System.Text;
 
 namespace SWT_L5_6_Interfaces
 {
-   public class ECS
+   public class Ecs
     {
         private int _threshold;
         private readonly ITempSensor _tempSensor;
         private readonly IHeater _heater;
 
-        public ECS(int thr)
+        public Ecs(int thr)
         {
             SetThreshold(thr);
             _tempSensor = new TempSensor();

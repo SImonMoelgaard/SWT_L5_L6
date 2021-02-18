@@ -13,4 +13,8 @@
     <PackageReference Include="NunitXml.TestLogger" Version="3.0.91" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SWT_L5_6_Interfaces\SWT_L5_6_Interfaces.csproj" />
+  </ItemGroup>
+
 </Project>

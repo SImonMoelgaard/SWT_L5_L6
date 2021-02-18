@@ -11,6 +11,7 @@ namespace SWT_L5_6_Interfaces
         public int GetTemp()
         {
             return gen.Next(-5, 45);
+            
         }
 
         public bool RunSelfTest()
