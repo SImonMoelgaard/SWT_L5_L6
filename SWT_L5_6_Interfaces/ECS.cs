@@ -10,11 +10,11 @@ namespace SWT_L5_6_Interfaces
         private readonly ITempSensor _tempSensor;
         private readonly IHeater _heater;
 
-        public Ecs(int thr)
+        public Ecs(int thr, ITempSensor tempsensor, IHeater heater)
         {
             SetThreshold(thr);
-            _tempSensor = new TempSensor();
-            _heater = new Heater();
+            _tempSensor = tempsensor;
+            _heater = heater;
         }
 
         public void Regulate()
